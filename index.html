@@ -8,26 +8,33 @@
   </head>
   <body>
     <main class="portfolio">
-      <nav class="navigation" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#achievements">Achievement</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <header class="site-header">
+        <nav aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#achievements">Achievement</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-      <section class="hero" id="home">
-        <div class="monogram" aria-label="Marian Ramos monogram">
-          <svg viewBox="0 0 140 140" role="img" aria-hidden="true">
-            <path class="swirl" d="M29 37c21 8 34 40 19 61-8 12-23 9-22-2 1-8 10-10 17-7 12 6 22 4 31-7 9-11 11-26 28-29" />
-            <path class="swirl fine" d="M23 52c16-10 30 2 30 17m-35 7c13-13 27-6 33 4m54-37c-8 11-9 20-4 29" />
-            <text x="38" y="102" class="script-letter">M</text>
-            <path class="flower" d="M27 27c5 2 6 6 2 9-5-1-7-5-2-9zm5 2c0-6 4-8 7-4-1 5-4 7-7 4zm-8 5c-5-3-4-7 1-8 4 4 3 7-1 8zm8 3c-1 5-5 6-8 2 2-5 5-6 8-2z" />
-            <circle cx="30" cy="34" r="2" fill="#f433a5" />
-            <path class="flower blue" d="M108 91c-5-2-6-6-2-9 5 1 7 5 2 9zm-5-2c0 6-4 8-7 4 1-5 4-7 7-4zm8-5c5 3 4 7-1 8-4-4-3-7 1-8zm-8-3c1-5 5-6 8-2-2 5-5 6-8 2z" />
-            <circle cx="105" cy="83" r="2" fill="#246aff" />
-          </svg>
-        </div>
-        <div class="welcome">
+      <section class="hero" id="home" aria-label="Welcome">
+        <svg class="brand-art" viewBox="0 0 140 140" role="img" aria-label="Marian Ramos monogram">
+          <defs>
+            <linearGradient id="brandGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#5275ff" />
+              <stop offset="1" stop-color="#df4fcb" />
+            </linearGradient>
+          </defs>
+          <circle cx="70" cy="70" r="70" fill="url(#brandGradient)" />
+          <circle cx="70" cy="70" r="47" fill="none" stroke="#29204c" stroke-width=".8" />
+          <path d="M23 43c16 5 8 24 2 34m89-22c-14 2-17 18-10 27M28 95c8-7 8-17 1-23m72 42c-3-12 2-20 12-24" fill="none" stroke="#28204b" stroke-width="1" />
+          <path d="M24 37c7 3 11 8 12 16-7-2-12-7-12-16zm90 77c-8-1-14-4-17-11 8 0 14 4 17 11z" fill="#f28bd9" />
+          <text x="38" y="96" fill="#171024" font-family="cursive" font-size="61" font-style="italic">M</text>
+          <path d="M57 38c-7 18-12 45-19 68m20-67c-2 29-3 48-5 66" fill="none" stroke="#171024" stroke-width="2" />
+          <circle cx="27" cy="44" r="2" fill="#f6a4dc" />
+          <circle cx="111" cy="106" r="2.5" fill="#f6a4dc" />
+        </svg>
+        <div class="welcome-copy">
           <h1>“ Welcome to my Personal Website”</h1>
           <p>Hello! I’m&nbsp; a student from Polytechnic College of Botolan.<br />I believe in hardwork,continuous learning.</p>
         </div>
@@ -38,51 +45,64 @@
           <h2>“ABOUT ME”</h2>
           <p>I’m Marian V. Ramos 21 yrs old from Sanjuan Botolan Zambales.I believe that education is the key to opening many opportunities in the future.My main goals is to finish my studies make family proud.</p>
         </div>
-        <div class="portrait" role="img" aria-label="Illustrated portrait of Marian in a black suit">
-          <svg viewBox="0 0 150 170" aria-hidden="true">
-            <rect width="150" height="170" fill="#f5f5f2" />
-            <path d="M42 40c0-22 12-33 32-33 21 0 33 13 31 37l-5 30H44z" fill="#171615" />
-            <ellipse cx="75" cy="51" rx="25" ry="32" fill="#d9a17d" />
-            <path d="M50 48c2-27 12-38 29-38 18 0 28 13 27 35-7-3-12-11-15-20-10 11-25 17-41 18z" fill="#171615" />
-            <path d="M63 54h6m14 0h6" stroke="#34231f" stroke-width="2" stroke-linecap="round" />
-            <path d="M69 70q7 5 14 0" fill="none" stroke="#914e48" stroke-width="1.5" stroke-linecap="round" />
-            <path d="M57 81l18 13 19-13 13 5 23 84H18l20-84z" fill="#17191c" />
-            <path d="M62 81l13 13 13-13 8 5-8 17H66l-8-17z" fill="#fff" />
-            <path d="M72 94h7l5 54-9 11-9-11z" fill="#22252a" />
-            <path d="M62 82l13 12-16 16-12-22zm26 0L75 94l17 16 12-22z" fill="#25272b" />
-          </svg>
-        </div>
+        <svg class="portrait" viewBox="0 0 140 145" role="img" aria-label="Illustration of Marian in a black suit">
+          <rect width="140" height="145" fill="#f1f0ed" />
+          <path d="M43 28c0-16 11-25 27-25s27 10 27 26v22H43z" fill="#181819" />
+          <ellipse cx="70" cy="42" rx="23" ry="29" fill="#d5a18a" />
+          <path d="M47 36c1-21 10-31 26-31 13 0 23 10 24 29-8-4-14-12-17-19-8 10-20 16-33 17z" fill="#151515" />
+          <path d="M61 42h4m12 0h4" stroke="#28201e" stroke-width="2" stroke-linecap="round" />
+          <path d="M66 56q4 3 8 0" fill="none" stroke="#9a554e" stroke-width="1.5" />
+          <path d="M50 69l20 12 20-12 16 9 16 67H18l15-67z" fill="#202123" />
+          <path d="M59 69l11 12 11-12-4 17H63z" fill="#fff" />
+          <path d="M69 84h4l5 48-7 7-6-7z" fill="#171719" />
+          <path d="M49 70l-15 9 13 22 14-20zm42 0 15 9-13 22-14-20z" fill="#292a2c" />
+        </svg>
       </section>
 
       <section class="achievements section" id="achievements">
         <h2>MY ACHIEVEMENTS:</h2>
-        <div class="certificates">
+        <div class="certificate-grid">
           <article class="certificate-item">
-            <div class="certificate certificate-gold" role="img" aria-label="Academic Achiever Award certificate">
-              <div class="cert-inner">
-                <div class="seal">★</div>
-                <small>Republic of the Philippines<br />Polytechnic College of Botolan</small>
-                <strong>ACADEMIC ACHIEVER AWARD</strong>
-                <span>is hereby awarded to</span>
-                <b>Marian V. Ramos</b>
-                <span>for achieving a general average of 87</span>
-                <div class="signature">M. V. Ramos</div>
-              </div>
-            </div>
+            <svg class="certificate certificate-gold" viewBox="0 0 220 125" role="img" aria-label="Academic achiever award certificate">
+              <rect width="220" height="125" fill="#f8e8ce" />
+              <path d="M0 0h220v16L0 108zm0 125h220V15L0 107z" fill="#bd9254" opacity=".35" />
+              <path d="M7 7h206v111H7z" fill="none" stroke="#a77d42" stroke-width="2" />
+              <circle cx="27" cy="24" r="12" fill="#4f8b60" stroke="#d3ac50" stroke-width="3" />
+              <text x="110" y="17" text-anchor="middle" font-size="6" font-family="Arial" fill="#333">Polytechnic College of Botolan</text>
+              <text x="110" y="25" text-anchor="middle" font-size="5" font-family="Arial" fill="#333">Republic of the Philippines</text>
+              <text x="110" y="43" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="#29231d">ACADEMIC ACHIEVER AWARD</text>
+              <text x="110" y="55" text-anchor="middle" font-size="6" font-family="Arial" fill="#333">This certificate is presented to</text>
+              <text x="110" y="71" text-anchor="middle" font-size="13" font-style="italic" font-family="cursive" fill="#342820">Marian V. Ramos</text>
+              <path d="M76 75h68" stroke="#745a3c" stroke-width=".7" />
+              <text x="110" y="86" text-anchor="middle" font-size="5" font-family="Arial" fill="#333">for achieving a general average of 87 during the</text>
+              <text x="110" y="94" text-anchor="middle" font-size="5" font-family="Arial" fill="#333">1st Semester, S.Y. 2021–2022.</text>
+              <circle cx="35" cy="93" r="12" fill="none" stroke="#c28b34" stroke-width="3" />
+              <path d="M29 104l-4 17 10-7 10 7-4-17" fill="#cf8b36" />
+              <path d="M92 108h36m-28 4h20" stroke="#514738" stroke-width="1" />
+            </svg>
             <h3>CERTIFICATE 1:</h3>
             <p>Academic Achiever award, Polytechnic College of Botolan awarded for achieving a general average of 87 during the 1st Semester, S.Y. 2021-2022.</p>
           </article>
           <article class="certificate-item">
-            <div class="certificate certificate-blue" role="img" aria-label="Certificate of Recognition">
-              <div class="cert-inner">
-                <div class="cert-top"><span class="seal blue-seal">✿</span><small>Tagutog National High School</small><span class="deped">DepEd</span></div>
-                <strong>CERTIFICATE OF RECOGNITION</strong>
-                <span>is proudly presented to</span>
-                <b>MARIAN V. RAMOS</b>
-                <span>for being an achiever</span>
-                <div class="signature">Principal</div>
-              </div>
-            </div>
+            <svg class="certificate certificate-blue" viewBox="0 0 220 125" role="img" aria-label="Certificate of recognition">
+              <rect width="220" height="125" fill="#f7f3e9" />
+              <path d="M4 4h212v117H4z" fill="none" stroke="#4c6e75" stroke-width="3" />
+              <path d="M10 10h200v105H10z" fill="none" stroke="#c39b3d" stroke-width="1.5" />
+              <circle cx="27" cy="21" r="10" fill="#2b8e9b" stroke="#e6bd45" stroke-width="2" />
+              <text x="184" y="20" font-size="8" font-weight="bold" font-family="Arial" fill="#2775a9">DepEd</text>
+              <text x="110" y="18" text-anchor="middle" font-size="6" font-family="Arial" fill="#333">Republic of the Philippines</text>
+              <text x="110" y="31" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="#29231d">CERTIFICATE OF RECOGNITION</text>
+              <circle cx="30" cy="48" r="11" fill="#e2ae32" stroke="#c67b27" stroke-width="2" />
+              <text x="30" y="50" text-anchor="middle" font-size="5" font-weight="bold" font-family="Arial" fill="#fff">AWARD</text>
+              <text x="110" y="49" text-anchor="middle" font-size="6" font-family="Arial" fill="#333">This certificate is presented to</text>
+              <text x="110" y="63" text-anchor="middle" font-size="12" font-style="italic" font-family="cursive" fill="#342820">Marian V. Ramos</text>
+              <path d="M77 66h66" stroke="#745a3c" stroke-width=".7" />
+              <text x="110" y="77" text-anchor="middle" font-size="6" font-family="Arial" fill="#333">ACHIEVER AWARD</text>
+              <text x="110" y="86" text-anchor="middle" font-size="5" font-family="Arial" fill="#333">Taugog National High School</text>
+              <text x="110" y="94" text-anchor="middle" font-size="5" font-family="Arial" fill="#333">Grade 8 Diamond, general average of 88.13</text>
+              <text x="110" y="102" text-anchor="middle" font-size="5" font-family="Arial" fill="#333">S.Y. 2017–2018</text>
+              <path d="M80 110h60m-50 4h40" stroke="#514738" stroke-width="1" />
+            </svg>
             <h3>CERTIFICATE 2:</h3>
             <p>Certificate of Recognition , New Taugog National High School achiever award - Grade 8 Diamond general average of 88.13 S.Y. 2017-2018.</p>
           </article>
@@ -91,33 +111,29 @@
 
       <section class="contact section" id="contact">
         <h2>CONTACT US:</h2>
-        <div class="contact-grid">
+        <div class="contact-content">
           <div class="contact-details">
             <div class="contact-item">
-              <span class="contact-icon people" aria-hidden="true">●<i>●</i></span>
+              <svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="15" cy="10" r="6" fill="#66ed39"/><path d="M4 29c0-7 5-11 11-11s11 4 11 11v2H4z" fill="#66ed39"/><path d="M24 21l8 8m-6-11a5 5 0 1 1-5 5m5 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="none" stroke="#66ed39" stroke-width="3" stroke-linecap="round"/></svg>
               <p><strong>CONTACT NO.</strong><br />09934793927</p>
             </div>
             <div class="contact-item">
-              <span class="contact-icon envelope" aria-hidden="true">✉</span>
+              <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M2 6h32v24H2z" fill="#f53326"/><path d="M3 8l15 13L33 8" fill="none" stroke="#fff" stroke-width="2"/><path d="M3 29l11-11m19 11L22 18" stroke="#fff" stroke-width="1.5"/></svg>
               <p><strong>EMAIL ADD:</strong><br />ramosmarian0104<br />05@gmail.com</p>
             </div>
             <div class="contact-item">
-              <span class="facebook" aria-hidden="true">f</span>
+              <svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="16" fill="#2763cc"/><path d="M20 30V19h4l1-5h-5v-2c0-2 1-3 3-3h2V5h-4c-5 0-7 3-7 7v2h-3v5h3v11z" fill="#fff"/></svg>
               <p><strong>FACEBOOK:</strong><br />Marian Ramos</p>
             </div>
           </div>
           <form class="contact-form">
-            <label class="visually-hidden" for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Name:" />
-            <label class="visually-hidden" for="email">Email Address</label>
-            <input id="email" name="email" type="email" placeholder="Email Address:" />
-            <label class="visually-hidden" for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Message:"></textarea>
-            <button type="submit">Send</button>
+            <label><span class="sr-only">Name</span><input type="text" placeholder="Name:" /></label>
+            <label><span class="sr-only">Email Address</span><input type="email" placeholder="Email Address:" /></label>
+            <label><span class="sr-only">Message</span><textarea placeholder="Message:"></textarea></label>
+            <button type="button">Send</button>
           </form>
         </div>
       </section>
     </main>
-    <script src="script.js"></script>
   </body>
 </html>
